@@ -1,0 +1,712 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Avant l’export｜法国短视频交付检查｜董盛超</title>
+  <meta name="description" content="董盛超的独立产品工作样本：从法国区 300 条近期 App Store 评论出发，把短视频发布前的字幕安全区、帧率与交付回执做成一个可操作的检查器。">
+  <meta name="theme-color" content="#f4f6f9">
+  <meta name="color-scheme" content="light">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Avant l’export｜发布前，先确认这条视频交得出去">
+  <meta property="og:description" content="一个可操作的法国短视频交付检查。独立概念样张，不是客户项目。">
+  <meta property="og:url" content="https://xixiyiyiyi.github.io/avant-export/">
+  <meta property="og:image" content="https://xixiyiyiyi.github.io/avant-export/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="zh_CN">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://xixiyiyiyi.github.io/avant-export/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "Avant l’export",
+    "author": {"@type": "Person", "name": "董盛超"},
+    "dateCreated": "2026-11-15",
+    "inLanguage": ["zh-Hans", "fr"],
+    "description": "基于法国区公开 App Store 评论的独立产品工作样本与交互原型。"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+
+  <header class="site-header">
+    <a class="site-identity" href="#top" aria-label="董盛超，回到顶部">
+      <span class="identity-mark" aria-hidden="true">DS</span>
+      <span class="identity-copy">
+        <strong>董盛超</strong>
+        <span>作品样本 01</span>
+      </span>
+    </a>
+
+    <nav class="site-nav" aria-label="页面导航">
+      <a href="#work-sample">试用样张</a>
+      <a href="#evidence">依据</a>
+      <a href="#decision">判断</a>
+      <a href="#validation">验证</a>
+      <a href="#method">边界</a>
+    </nav>
+
+    <a class="header-action" href="#contact">简历 / 联系</a>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-intro">
+        <div class="eyebrow">
+          <span class="eyebrow-line" aria-hidden="true"></span>
+          <span>独立概念样张</span>
+          <span class="eyebrow-separator" aria-hidden="true">/</span>
+          <span>非客户项目</span>
+        </div>
+
+        <h1>发布前，先确认<br><span>这条视频交得出去。</span></h1>
+
+        <p class="hero-lede">
+          一条法国文化项目的竖屏视频，必须在 18:00 前交出去。这里把“最后的导出”做成一次 30 秒检查：发现字幕会被平台 UI 遮住、帧率不符合交付规格，修复，再生成一张可转交的回执。
+        </p>
+
+        <div class="role-line">
+          <span>董盛超</span>
+          <span>2027 届 · 黑龙江大学法语本科</span>
+          <span>方向：AI 产品运营 / 国际化业务</span>
+        </div>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work-sample" data-jump-demo>
+            试用 30 秒样张
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M8.5 3.5 13 8l-4.5 4.5"/></svg>
+          </a>
+          <a class="text-link" href="#evidence">先看判断依据</a>
+        </div>
+
+        <dl class="hero-proof" aria-label="工作样本摘要">
+          <div>
+            <dt>300</dt>
+            <dd>条近期法国区评论</dd>
+          </div>
+          <div>
+            <dt>4</dt>
+            <dd>个产品同窗口对照</dd>
+          </div>
+          <div>
+            <dt>1</dt>
+            <dd>个能亲手跑完的交付检查</dd>
+          </div>
+        </dl>
+
+        <p class="hero-footnote">
+          演示项目、人物与影像均为虚构素材。不是 CapCut 产品，也不代表其真实价格或功能。
+        </p>
+      </div>
+
+      <div class="hero-demo" id="work-sample">
+        <div class="demo-topline">
+          <div>
+            <span class="demo-label">DÉMO GUIDÉE</span>
+            <span class="demo-label-muted">3 étapes · aucun fichier envoyé</span>
+          </div>
+          <span class="demo-status"><i aria-hidden="true"></i> Projet fictif</span>
+        </div>
+
+        <section class="app-shell" id="preflight-app" data-stage="idle" aria-label="交付前检查交互样张">
+          <header class="app-bar">
+            <div class="app-brand" aria-label="Avant l’export">
+              <span class="app-logo" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M5 5h6v14H5z" opacity=".38"/><path d="M12 8h5.5M14 4.5 17.5 8 14 11.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="square" stroke-linejoin="miter"/></svg>
+              </span>
+              <span class="app-wordmark">avant l’export</span>
+              <span class="app-beta">beta</span>
+            </div>
+
+            <div class="project-switcher" aria-label="当前项目">
+              <span class="project-dot" aria-hidden="true"></span>
+              <span class="project-name">Dernière lumière</span>
+              <span class="project-episode">ép. 04</span>
+              <svg viewBox="0 0 12 12" aria-hidden="true"><path d="m3 4.5 3 3 3-3"/></svg>
+            </div>
+
+            <div class="app-bar-right">
+              <span class="draft-state">Brouillon</span>
+              <button class="icon-button" type="button" aria-label="查看样张说明" data-open-note>
+                <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7.2"/><path d="M10 9v4M10 6.5v.2"/></svg>
+              </button>
+            </div>
+          </header>
+
+          <div class="app-body">
+            <div class="preview-pane">
+              <div class="preview-heading">
+                <div>
+                  <span class="preview-kicker">PLAN 04</span>
+                  <strong>Réseaux sociaux · 00:28</strong>
+                </div>
+                <span class="preview-resolution">1080 × 1920</span>
+              </div>
+
+              <div class="video-stage">
+                <img src="assets/demo-paris.jpg" width="900" height="1600" alt="巴黎亚历山大三世桥黄昏，虚构项目演示画面" fetchpriority="high">
+                <div class="video-vignette" aria-hidden="true"></div>
+                <div class="video-noise" aria-hidden="true"></div>
+
+                <div class="video-overlay-top">
+                  <span>FR / VF</span>
+                  <span>00:12:18</span>
+                </div>
+
+                <div class="frame-title" aria-hidden="true">
+                  <span>DERNIÈRE LUMIÈRE</span>
+                  <b>Pont Alexandre III · 19:12</b>
+                </div>
+
+                <div class="safe-area" id="safe-area" aria-hidden="true">
+                  <span>Zone d’interface sociale · 18 %</span>
+                </div>
+
+                <div class="video-scan" aria-hidden="true"><span></span></div>
+
+                <p class="video-subtitle" id="video-subtitle">
+                  « On a attendu la dernière lumière. »
+                </p>
+
+                <div class="video-timecode" aria-hidden="true">00:12:18:04</div>
+              </div>
+
+              <div class="timeline" aria-label="视频时间轴">
+                <div class="timeline-ruler" aria-hidden="true">
+                  <span>00:00</span><span>00:07</span><span>00:14</span><span>00:21</span><span>00:28</span>
+                </div>
+                <div class="timeline-track" aria-hidden="true">
+                  <span class="timeline-segment" style="--start:3%;--width:31%"></span>
+                  <span class="timeline-segment" style="--start:38%;--width:21%"></span>
+                  <span class="timeline-segment" style="--start:63%;--width:32%"></span>
+                  <span class="timeline-marker" id="timeline-marker"></span>
+                  <span class="timeline-playhead" id="timeline-playhead"></span>
+                </div>
+                <div class="timeline-foot">
+                  <span>2 pistes · sous-titres FR</span>
+                  <span id="timeline-state">Prêt à contrôler</span>
+                </div>
+              </div>
+            </div>
+
+            <aside class="inspector-pane">
+              <div class="inspector-heading">
+                <div>
+                  <span class="inspector-kicker">AVANT LA LIVRAISON</span>
+                  <h2>Contrôle de sortie</h2>
+                </div>
+                <span class="status-pill" id="status-pill" data-tone="neutral" role="status" aria-live="polite">À vérifier</span>
+              </div>
+
+              <div class="client-brief">
+                <span class="brief-label">Brief reçu</span>
+                <p>18:00 · 9:16 · 60 fps · −14 LUFS · sous-titres FR</p>
+                <span class="brief-source">Projet fictif</span>
+              </div>
+
+              <div class="settings" aria-label="导出设置">
+                <div class="setting-row">
+                  <div class="setting-copy">
+                    <span>Format</span>
+                    <small>Reels / Stories</small>
+                  </div>
+                  <span class="setting-value is-valid">9:16 <svg viewBox="0 0 14 14" aria-hidden="true"><path d="m2.5 7 3 3 6-6"/></svg></span>
+                </div>
+
+                <div class="setting-row">
+                  <div class="setting-copy">
+                    <span>Sous-titres</span>
+                    <small>Placement bas</small>
+                  </div>
+                  <div class="segmented" id="subtitle-position" role="group" aria-label="字幕位置">
+                    <button type="button" data-position="low" aria-pressed="true">Bas</button>
+                    <button type="button" data-position="high" aria-pressed="false">Remonter</button>
+                  </div>
+                </div>
+
+                <div class="setting-row">
+                  <div class="setting-copy">
+                    <span>Cadence</span>
+                    <small id="fps-caption">Le brief demande 60 fps</small>
+                  </div>
+                  <div class="segmented segmented-number" id="frame-rate" role="group" aria-label="帧率">
+                    <button type="button" data-fps="30" aria-pressed="true">30</button>
+                    <button type="button" data-fps="60" aria-pressed="false">60</button>
+                  </div>
+                </div>
+
+                <div class="setting-row">
+                  <div class="setting-copy">
+                    <span>Audio</span>
+                    <small>Mixage pour réseaux sociaux</small>
+                  </div>
+                  <span class="setting-value is-valid">−14 LUFS <svg viewBox="0 0 14 14" aria-hidden="true"><path d="m2.5 7 3 3 6-6"/></svg></span>
+                </div>
+              </div>
+
+              <div class="control-state control-state-idle" id="state-idle">
+                <p>检查会对照客户 brief，找出会阻塞交付的设置。演示中不读取或上传视频文件。</p>
+                <button class="check-button" id="run-check" type="button">
+                  <span>Lancer le contrôle</span>
+                  <svg viewBox="0 0 18 18" aria-hidden="true"><path d="M3 9h10M8.5 3.5 14 9l-5.5 5.5"/></svg>
+                </button>
+                <span class="control-hint">第一步 / 发现 2 个交付问题</span>
+              </div>
+
+              <div class="control-state control-state-issues" id="state-issues" hidden>
+                <div class="issue-summary">
+                  <span class="issue-summary-icon" aria-hidden="true">!</span>
+                  <div>
+                    <strong id="issue-count">2 points bloquants</strong>
+                    <p>这会阻止在 18:00 前干净交付。</p>
+                  </div>
+                </div>
+
+                <div class="issue-list" id="issue-list"></div>
+
+                <button class="check-button check-button-fix" id="fix-all" type="button">
+                  <span>Tout corriger</span>
+                  <svg viewBox="0 0 18 18" aria-hidden="true"><path d="m3.5 9.2 3.4 3.4L14.5 5"/></svg>
+                </button>
+                <span class="control-hint">第二步 / 应用修复，再自动复查</span>
+              </div>
+
+              <div class="control-state control-state-pass" id="state-pass" hidden>
+                <div class="pass-mark" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="m4 12.5 5 5L20 6.5"/></svg>
+                </div>
+                <div class="pass-copy">
+                  <strong>Prêt à livrer</strong>
+                  <p>所有阻塞项已清除。可以生成一张给同事、客户或自己留档的交付回执。</p>
+                </div>
+                <dl class="pass-metrics">
+                  <div><dt id="pass-total">6</dt><dd>项检查通过</dd></div>
+                  <div><dt>0</dt><dd>个阻塞项</dd></div>
+                  <div><dt>0</dt><dd>项未确认例外</dd></div>
+                </dl>
+                <button class="receipt-button" id="emit-receipt" type="button">
+                  生成交付回执
+                  <svg viewBox="0 0 18 18" aria-hidden="true"><path d="M3 9h10M8.5 3.5 14 9l-5.5 5.5"/></svg>
+                </button>
+                <button class="text-button" id="reset-check" type="button">重新设置这次检查</button>
+              </div>
+
+              <p class="privacy-note">
+                <svg viewBox="0 0 16 16" aria-hidden="true"><rect x="3" y="7" width="10" height="7" rx="1.5"/><path d="M5.5 7V5a2.5 2.5 0 0 1 5 0v2"/></svg>
+                Aucun fichier n’est envoyé. Tout se passe dans cette page.
+              </p>
+            </aside>
+          </div>
+        </section>
+
+        <p class="demo-caption">
+          <span>SCÉNARIO FICTIF</span>
+          这次检查只证明工作流，不代表 CapCut 的实际导出条件或价格。试用中不读取你的文件。
+        </p>
+      </div>
+    </section>
+
+    <section class="evidence-section section" id="evidence">
+      <div class="section-intro">
+        <div class="section-number">01 / 依据</div>
+        <div class="section-copy">
+          <h2>300 条评论里，反复出现的不是“不会剪”，而是“交不出去”。</h2>
+          <p>我抓取了法国区近期公开评论，并把 InShot、VN、Canva 放在同一时间窗口里看。关键词只用来分诊，不用来证明因果；样本也不代表整个法国市场。</p>
+        </div>
+        <div class="section-meta">
+          <span>APPLE APP STORE · FR</span>
+          <span>2026-07-28 → 2026-11-14</span>
+        </div>
+      </div>
+
+      <div class="evidence-layout">
+        <div class="evidence-visual">
+          <div class="evidence-score">
+            <div>
+              <span class="score-number">2.99</span>
+              <span class="score-denominator">/ 5</span>
+            </div>
+            <p>CapCut 近期 300 条评论均值</p>
+            <span class="score-caveat">全量评分 4.62 / 5 · 131,307 人评分</span>
+          </div>
+
+          <div class="dot-plot-wrap">
+            <div class="dot-plot" id="dot-plot" aria-hidden="true"></div>
+            <p class="sr-only">300 条近期评论的星级分布：1 星 103 条，2 星 25 条，3 星 35 条，4 星 47 条，5 星 90 条。</p>
+            <div class="dot-legend" aria-label="星级分布">
+              <span><i data-star="1"></i>1★ <b>103</b></span>
+              <span><i data-star="2"></i>2★ <b>25</b></span>
+              <span><i data-star="3"></i>3★ <b>35</b></span>
+              <span><i data-star="4"></i>4★ <b>47</b></span>
+              <span><i data-star="5"></i>5★ <b>90</b></span>
+            </div>
+          </div>
+
+          <div class="signal-bars" aria-label="关键词命中数量">
+            <div class="signal-bar">
+              <div class="signal-label"><span>价格 / 订阅 / Pro</span><b>124</b></div>
+              <span class="bar"><i style="--w:100%"></i></span>
+            </div>
+            <div class="signal-bar">
+              <div class="signal-label"><span>导出 / 画质 / 保存</span><b>38</b></div>
+              <span class="bar"><i style="--w:30.6%"></i></span>
+            </div>
+            <div class="signal-bar">
+              <div class="signal-label"><span>Bug / 稳定性</span><b>34</b></div>
+              <span class="bar"><i style="--w:27.4%"></i></span>
+            </div>
+          </div>
+
+          <p class="evidence-note">关键词可重叠，不能相加成 196 个独立用户。这里只用来看哪些摩擦值得继续验证。</p>
+          <p class="evidence-assumption"><strong>原型补入的假设：</strong>评论样本没有统计字幕安全区。样张采用保守的 18% 底部遮挡线来演示交付检查；真实产品必须接平台规范与多设备实测，不能把这组评论当作该项证据。</p>
+        </div>
+
+        <div class="quote-panel">
+          <div class="quote-heading">
+            <div>
+              <span class="quote-kicker">原文 / VERBATIM</span>
+              <h3>让判断落回具体的人。</h3>
+            </div>
+            <span class="quote-counter" id="quote-counter">01 / 04</span>
+          </div>
+
+          <div class="quote-tabs" role="tablist" aria-label="评论类型">
+            <button id="quote-tab-price" type="button" role="tab" aria-selected="true" aria-controls="quote-stage" data-quote="price">付费边界</button>
+            <button id="quote-tab-export" type="button" role="tab" aria-selected="false" aria-controls="quote-stage" tabindex="-1" data-quote="export">导出</button>
+            <button id="quote-tab-reliability" type="button" role="tab" aria-selected="false" aria-controls="quote-stage" tabindex="-1" data-quote="reliability">可靠性</button>
+            <button id="quote-tab-positive" type="button" role="tab" aria-selected="false" aria-controls="quote-stage" tabindex="-1" data-quote="positive">反例</button>
+          </div>
+
+          <div class="quote-stage" id="quote-stage" role="tabpanel" aria-labelledby="quote-tab-price" tabindex="0">
+            <div class="quote-rating" id="quote-rating">1★ · 2026-11-06</div>
+            <blockquote lang="fr" id="quote-fr">« Je suis dégoûtée, j’ai fait une mise à jour et maintenant pour enregistrer une vidéo il faut payer. Enlevez ce système tout de suite !!!! »</blockquote>
+            <p class="quote-translation" id="quote-zh">更新之后，连保存视频也要付费了。请马上取消这个机制。</p>
+            <div class="quote-meta">
+              <span id="quote-id">Avis 14758878020</span>
+              <span>CapCut · App Store FR</span>
+            </div>
+          </div>
+
+          <div class="quote-interpretation">
+            <span>为什么这条重要</span>
+            <p id="quote-reading">不是“不愿意付费”，而是基础动作的边界在变化。用户无法在开始编辑前判断：最后导出时会不会被拦。</p>
+          </div>
+
+          <a class="source-link" id="quote-source" href="https://apps.apple.com/fr/app/capcut-%C3%A9diteur-vid%C3%A9o-photo/id1500855883" target="_blank" rel="noreferrer">
+            打开公开来源
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 13 13 3M6 3h7v7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="comparison-strip">
+        <div class="comparison-title">
+          <span>同窗口对照</span>
+          <p>这些数字不能直接排名产品好坏，但能判断“交付摩擦”是否只出现在一个样本里。</p>
+        </div>
+        <div class="comparison-row">
+          <div class="comparison-item is-focus">
+            <span class="app-name">CapCut</span>
+            <strong>2.99</strong>
+            <span class="comparison-n">n = 300</span>
+          </div>
+          <div class="comparison-item">
+            <span class="app-name">InShot</span>
+            <strong>4.39</strong>
+            <span class="comparison-n">n = 102</span>
+          </div>
+          <div class="comparison-item">
+            <span class="app-name">VN</span>
+            <strong>4.67</strong>
+            <span class="comparison-n">n = 27</span>
+          </div>
+          <div class="comparison-item">
+            <span class="app-name">Canva</span>
+            <strong>4.27</strong>
+            <span class="comparison-n">n = 276</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="decision-section section" id="decision">
+      <div class="decision-lead">
+        <div class="section-number section-number-light">02 / 判断</div>
+        <p class="decision-overline">取舍 / PRODUCT DECISION</p>
+        <h2>我砍掉了“再做一个 AI 生成按钮”。</h2>
+        <p class="decision-lede">如果任务已经在“做了，但交不出去”这一步失败，多给十个模板、五种风格或一个更快的生成入口，都不会自动解决问题。真正缺的是交付前的确定性。</p>
+        <div class="positioning-line">
+          <span>Positionnement</span>
+          <p lang="fr">Pas un monteur de plus.<br>Le dernier contrôle avant<br>que la vidéo parte.</p>
+          <small>不是再加一个剪辑器，而是视频离开团队前的最后一道检查。</small>
+        </div>
+      </div>
+
+      <div class="decision-grid">
+        <article class="decision-card">
+          <span class="decision-index">01</span>
+          <h3>拦截返工，不拦截创作</h3>
+          <p>检查发生在剪辑完成之后、正式导出之前。它不替用户决定内容，只回答三个问题：规格是否匹配、画面是否能读、同事能否接手。</p>
+          <span class="decision-proof">Interaction choice</span>
+        </article>
+        <article class="decision-card">
+          <span class="decision-index">02</span>
+          <h3>给问题，不给“AI 分数”</h3>
+          <p>没有一个可疑的 87 分。界面上只有阻塞项、具体修复动作和可复制回执。评分会制造解释成本，回执能减少交接成本。</p>
+          <span class="decision-proof">Output choice</span>
+        </article>
+        <article class="decision-card">
+          <span class="decision-index">03</span>
+          <h3>先做窄，再做深</h3>
+          <p>这个样张只处理 9:16 社交视频的交付规格。它没有假装解决素材管理、协作审片和完整商业化，这些是下一步待验证范围。</p>
+          <span class="decision-proof">Scope choice</span>
+        </article>
+      </div>
+
+      <div class="decision-bridge">
+        <span class="bridge-line" aria-hidden="true"></span>
+        <p>这不是把研究做成一张漂亮长页，而是把研究结论压到一个可以亲手完成的产品动作里。</p>
+        <a href="#validation">继续看：如果真做，怎么验证</a>
+      </div>
+    </section>
+
+    <section class="validation-section section" id="validation">
+      <div class="section-intro section-intro-validation">
+        <div class="section-number">03 / 90 天</div>
+        <div class="section-copy">
+          <h2>如果继续做，先验证一个很窄的承诺。</h2>
+          <p>“发布前，确认这一条能交付。”不是“让所有人都成为剪辑师”。这决定了我先找谁、测什么，以及什么时候应该停。</p>
+        </div>
+      </div>
+
+      <div class="validation-layout">
+        <div class="audience-card">
+          <span class="audience-label">FIRST WEDGE / 先验证</span>
+          <h3>法国小型文化机构的内容团队</h3>
+          <p>2–10 人的传播团队，活动有明确节点，需要把视频交给社媒、媒体或合作方。团队里有人能判断内容，但未必每天处理各平台导出规格。</p>
+          <dl>
+            <div><dt>Job to be done</dt><dd>在活动结束后的固定时限内，把一条视频干净地交出去。</dd></div>
+            <div><dt>Why now</dt><dd>平台安全区、交付规格和多人交接同时变复杂；失败代价不是少一条内容，而是错过发行窗口。</dd></div>
+            <div><dt>Not first</dt><dd>专业后期团队和大型品牌。它们已经有成熟的审片与交付流程。</dd></div>
+          </dl>
+        </div>
+
+        <div class="plan-card">
+          <div class="plan-heading">
+            <span>VALIDATION PLAN</span>
+            <p>计划，不是已发生的结果。</p>
+          </div>
+          <ol class="timeline-plan">
+            <li>
+              <span class="plan-day">J1–J21</span>
+              <div>
+                <h4>8 次访谈 + 6 份真实 brief</h4>
+                <p>只找近 30 天交付过社交视频的文化机构传播负责人和剪辑执行者，收集真实格式要求。</p>
+              </div>
+            </li>
+            <li>
+              <span class="plan-day">J22–J56</span>
+              <div>
+                <h4>12 次 concierge 检查</h4>
+                <p>手工帮他们完成检查与回执。记录是否发现真实阻塞项、节省了多少次返工、回执是否被转给同事。</p>
+              </div>
+            </li>
+            <li>
+              <span class="plan-day">J57–J90</span>
+              <div>
+                <h4>两条获客小测</h4>
+                <p>一个文化场馆合作入口，一个法语创作者社群入口。看 30 天重复使用，不看点赞和注册数。</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <div class="criteria-card">
+          <div class="criteria-block continue">
+            <span>CONTINUER</span>
+            <ul>
+              <li>12 次中有 6 次在 30 天内再次请求检查</li>
+              <li>至少 8 人能不看解释，复述它拦住的真实风险</li>
+              <li>回执被转发给至少一位同事或客户</li>
+            </ul>
+          </div>
+          <div class="criteria-block stop">
+            <span>ARRÊTER</span>
+            <ul>
+              <li>8 次访谈里，多数人认为现有平台已足够检查</li>
+              <li>额外一步让交付变慢，且没有减少返工</li>
+              <li>只有“有趣”评价，没有人愿意拿真实项目再用一次</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="method-section section" id="method">
+      <div class="section-intro section-intro-method">
+        <div class="section-number">04 / 工作说明</div>
+        <div class="section-copy">
+          <h2>这是一个工作样本，不是客户战绩。</h2>
+          <p>我把“我做了什么”和“我没有做什么”分开写。这样面试时，任何一句判断都能被追问到底。</p>
+        </div>
+      </div>
+
+      <div class="work-ledger">
+        <article>
+          <span class="ledger-index">01</span>
+          <h3>研究</h3>
+          <p>抓取并清洗法国区 300 条近期公开评论，按窗口对照四个产品；逐条阅读样本并建立引用台账。</p>
+          <span class="ledger-note">公开数据 · 抓取于 2026-11-15</span>
+        </article>
+        <article>
+          <span class="ledger-index">02</span>
+          <h3>判断</h3>
+          <p>从付费可见性、导出可靠性等信号中，收窄到“交付确定性”这一可操作问题，而不是继续扩大功能清单。</p>
+          <span class="ledger-note">取舍：从功能诉求转向交付结果</span>
+        </article>
+        <article>
+          <span class="ledger-index">03</span>
+          <h3>制作</h3>
+          <p>定义检查流程，用法语写产品内文案，完成响应式交互样张、交付回执和一页说明。</p>
+          <span class="ledger-note">HTML / CSS / JS · 无框架 · 手机可操作</span>
+        </article>
+        <article class="ledger-boundary">
+          <span class="ledger-index">04</span>
+          <h3>没有做</h3>
+          <p>没有 CapCut 合作或 API 接入；没有真实客户、用户访谈、转化或付费数据；没有把虚构演示包装成上线结果。</p>
+          <span class="ledger-note">边界也是工作的一部分</span>
+        </article>
+      </div>
+
+      <div class="method-links">
+        <a href="brief.pdf" target="_blank" rel="noreferrer">
+          <span>一页项目说明</span>
+          <small>PDF · 适合面试前快速扫读</small>
+          <svg viewBox="0 0 18 18" aria-hidden="true"><path d="M3 9h10M8.5 3.5 14 9l-5.5 5.5"/></svg>
+        </a>
+        <a href="data/quote-ledger.csv" target="_blank">
+          <span>引用台账</span>
+          <small>CSV · 原文、日期、星级、用途</small>
+          <svg viewBox="0 0 18 18" aria-hidden="true"><path d="M3 9h10M8.5 3.5 14 9l-5.5 5.5"/></svg>
+        </a>
+        <a href="data/stats.json" target="_blank">
+          <span>统计口径</span>
+          <small>JSON · 样本、窗口、关键词规则</small>
+          <svg viewBox="0 0 18 18" aria-hidden="true"><path d="M3 9h10M8.5 3.5 14 9l-5.5 5.5"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-main">
+        <span class="contact-kicker">2027 校招 / AI 产品 · 国际化 GTM</span>
+        <h2>我想做离用户、语言<br class="desktop-break">和市场都更近的产品工作。</h2>
+        <p>2027 届法语本科。做过内容运营、HR 运营与非遗数字化项目；这个样张是我用法语材料、公开评论和一个能亲手跑完的原型，把判断落到交付上的一次练习。</p>
+        <p class="contact-background">可实习 6 个月 · CET-6 · 可接受国内基地 + 国际业务</p>
+        <div class="contact-links">
+          <a href="mailto:228553640@qq.com">228553640@qq.com</a>
+          <a href="tel:+8615689059673">+86 156 8905 9673</a>
+          <a href="brief.pdf" target="_blank" rel="noreferrer">下载项目说明</a>
+        </div>
+      </div>
+
+      <div class="contact-qr">
+        <img src="assets/qr.svg" width="148" height="148" alt="作品链接二维码">
+        <div>
+          <strong>扫码直接试用</strong>
+          <p>不用登录，手机上就能跑完一次交付检查。链接也会附在简历里。</p>
+          <a class="qr-url" id="qr-url" href="https://xixiyiyiyi.github.io/avant-export/" target="_blank" rel="noreferrer">xixiyiyiyi.github.io/avant-export</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>Avant l’export · 独立概念样张 01</span>
+    <span>董盛超 / 2026-11-15 · Photo de démonstration : Unsplash</span>
+    <a href="#top">回到顶部 ↑</a>
+  </footer>
+
+  <dialog class="receipt-dialog" id="receipt-dialog" aria-labelledby="receipt-title">
+    <div class="receipt-sheet">
+      <div class="receipt-topbar">
+        <div>
+          <span class="receipt-brand">avant l’export</span>
+          <span class="receipt-demo">DÉMO</span>
+        </div>
+        <button class="dialog-close" id="close-receipt" type="button" aria-label="关闭交付回执">
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 5 10 10M15 5 5 15"/></svg>
+        </button>
+      </div>
+
+      <div class="receipt-title-row">
+        <div>
+          <span class="receipt-kicker">BON DE LIVRAISON</span>
+          <h2 id="receipt-title">Prêt à livrer</h2>
+        </div>
+        <span class="receipt-code" id="receipt-code">AE-1511-04</span>
+      </div>
+
+      <dl class="receipt-project">
+        <div><dt>Projet</dt><dd>Dernière lumière · ép. 04</dd></div>
+        <div><dt>Livraison</dt><dd>Réseaux sociaux · 9:16 · 00:28</dd></div>
+        <div><dt>Contrôlé le</dt><dd id="receipt-date">15 nov. 2026</dd></div>
+      </dl>
+
+      <div class="receipt-checklist">
+        <div class="receipt-check"><span>Format & cadence</span><b>9:16 · 60 fps</b><i>PASS</i></div>
+        <div class="receipt-check"><span>Sous-titres français</span><b>Hors zone d’interface</b><i>PASS</i></div>
+        <div class="receipt-check"><span>Audio</span><b>−14 LUFS</b><i>PASS</i></div>
+        <div class="receipt-check"><span>Validation interne</span><b>1 destinataire</b><i>PASS</i></div>
+      </div>
+
+      <div class="receipt-summary">
+        <div><span>Corrections appliquées</span><strong id="receipt-corrections">2</strong></div>
+        <div><span>Bloquants restants</span><strong>0</strong></div>
+        <div><span>Exceptions</span><strong>0</strong></div>
+      </div>
+
+      <div class="receipt-note">
+        <span>NOTE DE LIVRAISON</span>
+        <p>Le fichier peut être remis selon le brief. Ce bon de démonstration ne remplace pas la validation finale du client.</p>
+      </div>
+
+      <div class="receipt-signature">
+        <div>
+          <span>Émis par</span>
+          <strong>Dong Shengchao</strong>
+        </div>
+        <span class="signature-mark" aria-hidden="true">DS</span>
+      </div>
+
+      <div class="receipt-actions">
+        <button class="button button-primary" id="download-receipt" type="button">下载回执 .txt</button>
+        <button class="button button-secondary" id="copy-receipt" type="button">复制摘要</button>
+        <span class="copy-status" id="copy-status" role="status" aria-live="polite"></span>
+      </div>
+
+      <p class="receipt-disclaimer">Scénario fictif · aucune donnée client · projet de démonstration</p>
+    </div>
+  </dialog>
+
+  <dialog class="note-dialog" id="note-dialog" aria-labelledby="note-title">
+    <div class="note-sheet">
+      <button class="dialog-close" id="close-note" type="button" aria-label="关闭说明">
+        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 5 10 10M15 5 5 15"/></svg>
+      </button>
+      <span class="note-kicker">À PROPOS DE CETTE DÉMO</span>
+      <h2 id="note-title">这是一个工作样本，不是上线产品。</h2>
+      <p>界面只模拟交付检查。它不连接 CapCut，不上传文件，也不声称当前产品已有这些功能。</p>
+      <p>项目、人物和影像是虚构演示素材。公开评论来自法国区 App Store，统计窗口和引用可以在一页说明与数据文件中核对。</p>
+      <button class="button button-primary" id="close-note-action" type="button">继续试用</button>
+    </div>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>
