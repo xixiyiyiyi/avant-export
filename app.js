@@ -380,8 +380,10 @@
   });
 
   const jumpButton = document.querySelector("[data-jump-demo]");
+  const demoTarget = document.querySelector("#try-demo");
   jumpButton?.addEventListener("click", () => {
-    window.setTimeout(() => runCheckButton.focus({ preventScroll: true }), 420);
+    const focusDelay = prefersReducedMotion.matches ? 80 : 520;
+    window.setTimeout(() => demoTarget.focus({ preventScroll: true }), focusDelay);
   });
 
   document.addEventListener("keydown", (event) => {
