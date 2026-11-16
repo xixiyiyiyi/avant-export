@@ -42,7 +42,7 @@
       fr: "« Je suis dégoûtée, j’ai fait une mise à jour et maintenant pour enregistrer une vidéo il faut payer. Enlevez ce système tout de suite !!!! »",
       zh: "更新之后，连保存视频也要付费了。请马上取消这个机制。",
       id: "Avis 14758878020",
-      reading: "不是“不愿意付费”，而是基础动作的边界在变化。用户无法在开始编辑前判断：最后导出时会不会被拦。",
+      reading: "用户把更新后的付费提示直接和保存视频联系起来。不能据此判断订阅模式本身错误，但导出前出现新的付费门槛，会直接影响交付信心。",
       href: "https://apps.apple.com/fr/app/capcut-%C3%A9diteur-vid%C3%A9o-photo/id1500855883"
     },
     export: {
@@ -51,7 +51,7 @@
       fr: "« Le logiciel bug à répétition, il n’est pas capable d’exporter les vidéos en 60fps correctement enfin, je le trouve très mauvais pour le prix… »",
       zh: "软件反复出 bug，连 60fps 视频都不能正确导出；以这个价格来说太差了。",
       id: "Avis 14667472205",
-      reading: "交付要求不是抽象的“高质量”。它具体到 60fps、能否打开、能否保存。任何一项失败，前面的剪辑价值都归零。",
+      reading: "这条评论把交付要求说得很具体：60fps、能打开、能保存。任何一项失败，前面的剪辑都无法交付。",
       href: "https://apps.apple.com/fr/app/capcut-%C3%A9diteur-vid%C3%A9o-photo/id1500855883"
     },
     reliability: {
@@ -60,7 +60,7 @@
       fr: "« Comment être aussi bien et aussi nul à la fois ? Le logiciel est super, intuitif, bien pensé… mais absolument pas fiable. Des projets impossible à ouvrir après quelques semaines, les fonctionnalités que ne fonctionne pas, problèmes d’exports. »",
       zh: "怎么能同时这么好又这么糟？软件很棒、直觉、有想法，但完全不可靠：几周后项目打不开，功能失效，导出出问题。",
       id: "Avis 14564254519",
-      reading: "用户并非否定创作体验。真正破坏信任的是：项目做了，却在最后一步变得不可控。好的产品判断要能同时容纳这两面。",
+      reading: "用户认可剪辑体验，但项目打不开、功能失效和导出问题会让信任迅速下降。产品体验与交付可靠性需要分开判断。",
       href: "https://apps.apple.com/fr/app/capcut-%C3%A9diteur-vid%C3%A9o-photo/id1500855883"
     },
     positive: {
@@ -69,7 +69,7 @@
       fr: "« L’application est vraiment géniale !! J’ai fait de super montage avec, mais au fil du temps, tout devient pro et c’était un peu énervant mais sinon c’est super !! Je recommande 🥹 »",
       zh: "应用真的很棒，我做了很好的剪辑；但时间久了，什么都在变成 Pro，有点烦，除此之外真的很好，我推荐。",
       id: "Avis 14756465783",
-      reading: "这条 5 星反例限制了结论：不能把低均值解释成“产品差”。创作体验仍有价值，摩擦集中发生在边界和交付。",
+      reading: "这条 5 星评论是反例。低均值不能直接解释成产品整体失败：创作体验仍有价值，摩擦集中在付费与导出。",
       href: "https://apps.apple.com/fr/app/capcut-%C3%A9diteur-vid%C3%A9o-photo/id1500855883"
     }
   };
